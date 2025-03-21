@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D40F6FE32D2196180059B7A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F6FE22D2196180059B7A7 /* ContentView.swift */; };
+		D40F6FE52D2196180059B7A7 /* SubTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F6FE42D2196180059B7A7 /* SubTopic.swift */; };
+		D40F701E2D21A9160059B7A7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F701D2D21A9160059B7A7 /* Question.swift */; };
+		D40F70222D223CF00059B7A7 /* AddSubTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70212D223CF00059B7A7 /* AddSubTopicView.swift */; };
+		D40F70242D223D120059B7A7 /* QuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70232D223D120059B7A7 /* QuestionsListView.swift */; };
+		D40F70262D2303FB0059B7A7 /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70252D2303FB0059B7A7 /* AddQuestionView.swift */; };
+		D40F702A2D232EF70059B7A7 /* SubTopicRecallTimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70292D232EF70059B7A7 /* SubTopicRecallTimeStamp.swift */; };
+		D40F702C2D232F1B0059B7A7 /* SubTopicOnlineLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F702B2D232F1B0059B7A7 /* SubTopicOnlineLink.swift */; };
+		D40F702E2D232F560059B7A7 /* QuestionRecallTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F702D2D232F560059B7A7 /* QuestionRecallTimestamp.swift */; };
+		D40F70302D232F750059B7A7 /* QuestionOnlineLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F702F2D232F750059B7A7 /* QuestionOnlineLink.swift */; };
+		D40F70342D2330A40059B7A7 /* LinkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70332D2330A40059B7A7 /* LinkType.swift */; };
+		D40F70362D2344AD0059B7A7 /* QuestionLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70352D2344AD0059B7A7 /* QuestionLink.swift */; };
+		D40F703A2D2346260059B7A7 /* CategoryLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70392D2346260059B7A7 /* CategoryLink.swift */; };
+		D40F703C2D2483C30059B7A7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F703B2D2483C30059B7A7 /* DateFormatter.swift */; };
+		D40F70442D284EBD0059B7A7 /* LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70432D284EBD0059B7A7 /* LocalizedStringKey.swift */; };
+		D40F70462D285D3F0059B7A7 /* UpdateQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70452D285D3F0059B7A7 /* UpdateQuestionView.swift */; };
+		D40F70482D285F420059B7A7 /* QuestionAndUserAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70472D285F420059B7A7 /* QuestionAndUserAnswerView.swift */; };
+		D40F704E2D29C2D80059B7A7 /* SubTopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F704D2D29C2D80059B7A7 /* SubTopicListView.swift */; };
+		D40F70532D2ADEDC0059B7A7 /* SubTopicTimeStampsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70522D2ADEDC0059B7A7 /* SubTopicTimeStampsView.swift */; };
+		D40F70552D2AE68A0059B7A7 /* UpdateSubTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70542D2AE68A0059B7A7 /* UpdateSubTopicView.swift */; };
+		D40F70572D2B0F1E0059B7A7 /* SubTopicLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70562D2B0F1E0059B7A7 /* SubTopicLinksView.swift */; };
+		D40F70592D2B371E0059B7A7 /* AddSubTopicLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F70582D2B371E0059B7A7 /* AddSubTopicLinkView.swift */; };
+		D42BDA6E2D5AB6AE009711A4 /* UpdateTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA6D2D5AB6AE009711A4 /* UpdateTopicView.swift */; };
+		D42BDA8B2D5BC056009711A4 /* TopicRecallTimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA8A2D5BC056009711A4 /* TopicRecallTimeStamp.swift */; };
+		D42BDA8D2D5BC06F009711A4 /* TopicOnlineLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA8C2D5BC06F009711A4 /* TopicOnlineLink.swift */; };
+		D42BDA8F2D5BD74D009711A4 /* UpdateTopicViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA8E2D5BD74D009711A4 /* UpdateTopicViewHelpScreen.swift */; };
+		D42BDA912D5BF524009711A4 /* TopicLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA902D5BF524009711A4 /* TopicLink.swift */; };
+		D42BDA932D5CEE44009711A4 /* ManageTopicsViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDA922D5CEE44009711A4 /* ManageTopicsViewHelpScreen.swift */; };
+		D42BDAB82D5EA4BD009711A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42BDAB72D5EA4BD009711A4 /* SettingsView.swift */; };
+		D432BDF22D3B1AA300ED5776 /* SubTopicLinksViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BDF12D3B1AA300ED5776 /* SubTopicLinksViewHelpScreen.swift */; };
+		D432BDF62D3C50E600ED5776 /* AddQuestionViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BDF52D3C50E600ED5776 /* AddQuestionViewHelpScreen.swift */; };
+		D432BDF82D3C578200ED5776 /* UpdateQuestionViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BDF72D3C578200ED5776 /* UpdateQuestionViewHelpScreen.swift */; };
+		D432BDFA2D3C810400ED5776 /* QuestionViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BDF92D3C810400ED5776 /* QuestionViewHelpScreen.swift */; };
+		D432BE162D3DC2A000ED5776 /* QuestionTimeStampsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE152D3DC2A000ED5776 /* QuestionTimeStampsView.swift */; };
+		D432BE182D3DC43F00ED5776 /* QuestionTimeStampsViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE172D3DC43F00ED5776 /* QuestionTimeStampsViewHelpScreen.swift */; };
+		D432BE1A2D3DC54200ED5776 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE192D3DC54200ED5776 /* QuestionView.swift */; };
+		D432BE1C2D3DC86800ED5776 /* ShowQuestionLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE1B2D3DC86800ED5776 /* ShowQuestionLinksView.swift */; };
+		D432BE1E2D3DC88600ED5776 /* AddQuestionLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE1D2D3DC88600ED5776 /* AddQuestionLinkView.swift */; };
+		D432BE202D3DC8A600ED5776 /* UpdateQuestionLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE1F2D3DC8A600ED5776 /* UpdateQuestionLinksView.swift */; };
+		D432BE222D3DCC2E00ED5776 /* ShowQuestionLinksViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE212D3DCC2E00ED5776 /* ShowQuestionLinksViewHelpScreen.swift */; };
+		D432BE242D3DCC9700ED5776 /* UpdateQuestionLinkViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE232D3DCC9700ED5776 /* UpdateQuestionLinkViewHelpScreen.swift */; };
+		D432BE262D3DCCD500ED5776 /* AddQuestionLinkViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE252D3DCCD500ED5776 /* AddQuestionLinkViewHelpScreen.swift */; };
+		D432BE282D402D8400ED5776 /* QuestionListViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432BE272D402D8400ED5776 /* QuestionListViewHelpScreen.swift */; };
+		D45D19642D47FE7C009E62DD /* JSONImportAndExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D19632D47FE65009E62DD /* JSONImportAndExport.swift */; };
+		D45D196A2D48408B009E62DD /* ImportJSONView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D19692D48408B009E62DD /* ImportJSONView.swift */; };
+		D471BFE92D4F103200C90983 /* ImportJSONViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D471BFE82D4F101000C90983 /* ImportJSONViewHelpScreen.swift */; };
+		D489DE442D67AD570057F2E8 /* performJSONBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D489DE432D67AD570057F2E8 /* performJSONBackup.swift */; };
+		D490037A2D55397F00005A57 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49003792D55396E00005A57 /* Topics.swift */; };
+		D490037C2D553D7900005A57 /* TopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490037B2D553D7900005A57 /* TopicListView.swift */; };
+		D490037F2D5547DF00005A57 /* AddTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D490037E2D5547DF00005A57 /* AddTopicView.swift */; };
+		D49003812D5548B300005A57 /* AddTopicViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49003802D55489F00005A57 /* AddTopicViewHelpScreen.swift */; };
+		D49003E72D56754700005A57 /* TopicListViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49003E62D56754700005A57 /* TopicListViewHelpScreen.swift */; };
+		D49003E92D5940CC00005A57 /* ManageTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49003E82D5940CC00005A57 /* ManageTopicsView.swift */; };
+		D4D9A4842D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4832D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift */; };
+		D4D9A4862D3715F900AEB65B /* SubTopicListViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4852D3715F900AEB65B /* SubTopicListViewHelpScreen.swift */; };
+		D4D9A48E2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A48D2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift */; };
+		D4D9A4902D389E6600AEB65B /* UpdateSubTopicViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A48F2D389E6600AEB65B /* UpdateSubTopicViewHelpScreen.swift */; };
+		D4D9A4922D39B6BD00AEB65B /* UpdateSubTopicLinkViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4912D39B6BD00AEB65B /* UpdateSubTopicLinkViewHelpScreen.swift */; };
+		D4D9A4942D39BDA400AEB65B /* AddSubTopicLinkViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4932D39BDA400AEB65B /* AddSubTopicLinkViewHelpScreen.swift */; };
+		D4D9A4962D39C27C00AEB65B /* SubTopicTimeStampsViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4952D39C27C00AEB65B /* SubTopicTimeStampsViewHelpScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D40F6FF22D21961A0059B7A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40F6FD52D2196180059B7A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40F6FDC2D2196180059B7A7;
+			remoteInfo = MyRecallApp;
+		};
+		D40F6FFC2D21961A0059B7A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40F6FD52D2196180059B7A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40F6FDC2D2196180059B7A7;
+			remoteInfo = MyRecallApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D40F6FDD2D2196180059B7A7 /* MyRecallApp_v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecallApp_v3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40F6FE22D2196180059B7A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D40F6FE42D2196180059B7A7 /* SubTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopic.swift; sourceTree = "<group>"; };
+		D40F6FF12D21961A0059B7A7 /* MyRecallApp_v3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRecallApp_v3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40F6FFB2D21961A0059B7A7 /* MyRecallApp_v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRecallApp_v3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40F701D2D21A9160059B7A7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D40F70212D223CF00059B7A7 /* AddSubTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubTopicView.swift; sourceTree = "<group>"; };
+		D40F70232D223D120059B7A7 /* QuestionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsListView.swift; sourceTree = "<group>"; };
+		D40F70252D2303FB0059B7A7 /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
+		D40F70292D232EF70059B7A7 /* SubTopicRecallTimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicRecallTimeStamp.swift; sourceTree = "<group>"; };
+		D40F702B2D232F1B0059B7A7 /* SubTopicOnlineLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicOnlineLink.swift; sourceTree = "<group>"; };
+		D40F702D2D232F560059B7A7 /* QuestionRecallTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRecallTimestamp.swift; sourceTree = "<group>"; };
+		D40F702F2D232F750059B7A7 /* QuestionOnlineLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOnlineLink.swift; sourceTree = "<group>"; };
+		D40F70332D2330A40059B7A7 /* LinkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkType.swift; sourceTree = "<group>"; };
+		D40F70352D2344AD0059B7A7 /* QuestionLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLink.swift; sourceTree = "<group>"; };
+		D40F70392D2346260059B7A7 /* CategoryLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLink.swift; sourceTree = "<group>"; };
+		D40F703B2D2483C30059B7A7 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		D40F70432D284EBD0059B7A7 /* LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKey.swift; sourceTree = "<group>"; };
+		D40F70452D285D3F0059B7A7 /* UpdateQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateQuestionView.swift; sourceTree = "<group>"; };
+		D40F70472D285F420059B7A7 /* QuestionAndUserAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionAndUserAnswerView.swift; sourceTree = "<group>"; };
+		D40F704D2D29C2D80059B7A7 /* SubTopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicListView.swift; sourceTree = "<group>"; };
+		D40F70522D2ADEDC0059B7A7 /* SubTopicTimeStampsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTopicTimeStampsView.swift; sourceTree = "<group>"; };
+		D40F70542D2AE68A0059B7A7 /* UpdateSubTopicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSubTopicView.swift; sourceTree = "<group>"; };
+		D40F70562D2B0F1E0059B7A7 /* SubTopicLinksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTopicLinksView.swift; sourceTree = "<group>"; };
+		D40F70582D2B371E0059B7A7 /* AddSubTopicLinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubTopicLinkView.swift; sourceTree = "<group>"; };
+		D42BDA6D2D5AB6AE009711A4 /* UpdateTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTopicView.swift; sourceTree = "<group>"; };
+		D42BDA8A2D5BC056009711A4 /* TopicRecallTimeStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicRecallTimeStamp.swift; sourceTree = "<group>"; };
+		D42BDA8C2D5BC06F009711A4 /* TopicOnlineLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicOnlineLink.swift; sourceTree = "<group>"; };
+		D42BDA8E2D5BD74D009711A4 /* UpdateTopicViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTopicViewHelpScreen.swift; sourceTree = "<group>"; };
+		D42BDA902D5BF524009711A4 /* TopicLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicLink.swift; sourceTree = "<group>"; };
+		D42BDA922D5CEE44009711A4 /* ManageTopicsViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageTopicsViewHelpScreen.swift; sourceTree = "<group>"; };
+		D42BDAB72D5EA4BD009711A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D432BDF12D3B1AA300ED5776 /* SubTopicLinksViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTopicLinksViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BDF52D3C50E600ED5776 /* AddQuestionViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestionViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BDF72D3C578200ED5776 /* UpdateQuestionViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateQuestionViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BDF92D3C810400ED5776 /* QuestionViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BE152D3DC2A000ED5776 /* QuestionTimeStampsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTimeStampsView.swift; sourceTree = "<group>"; };
+		D432BE172D3DC43F00ED5776 /* QuestionTimeStampsViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTimeStampsViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BE192D3DC54200ED5776 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		D432BE1B2D3DC86800ED5776 /* ShowQuestionLinksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQuestionLinksView.swift; sourceTree = "<group>"; };
+		D432BE1D2D3DC88600ED5776 /* AddQuestionLinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestionLinkView.swift; sourceTree = "<group>"; };
+		D432BE1F2D3DC8A600ED5776 /* UpdateQuestionLinksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateQuestionLinksView.swift; sourceTree = "<group>"; };
+		D432BE212D3DCC2E00ED5776 /* ShowQuestionLinksViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowQuestionLinksViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BE232D3DCC9700ED5776 /* UpdateQuestionLinkViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateQuestionLinkViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BE252D3DCCD500ED5776 /* AddQuestionLinkViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestionLinkViewHelpScreen.swift; sourceTree = "<group>"; };
+		D432BE272D402D8400ED5776 /* QuestionListViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListViewHelpScreen.swift; sourceTree = "<group>"; };
+		D45D19632D47FE65009E62DD /* JSONImportAndExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportAndExport.swift; sourceTree = "<group>"; };
+		D45D19692D48408B009E62DD /* ImportJSONView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportJSONView.swift; sourceTree = "<group>"; };
+		D471BFE82D4F101000C90983 /* ImportJSONViewHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportJSONViewHelpScreen.swift; sourceTree = "<group>"; };
+		D489DE432D67AD570057F2E8 /* performJSONBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performJSONBackup.swift; sourceTree = "<group>"; };
+		D49003792D55396E00005A57 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		D490037B2D553D7900005A57 /* TopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListView.swift; sourceTree = "<group>"; };
+		D490037E2D5547DF00005A57 /* AddTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicView.swift; sourceTree = "<group>"; };
+		D49003802D55489F00005A57 /* AddTopicViewHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicViewHelpScreen.swift; sourceTree = "<group>"; };
+		D49003E62D56754700005A57 /* TopicListViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListViewHelpScreen.swift; sourceTree = "<group>"; };
+		D49003E82D5940CC00005A57 /* ManageTopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTopicsView.swift; sourceTree = "<group>"; };
+		D4D9A4832D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubTopicLinksView.swift; sourceTree = "<group>"; };
+		D4D9A4852D3715F900AEB65B /* SubTopicListViewHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicListViewHelpScreen.swift; sourceTree = "<group>"; };
+		D4D9A48D2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubTopicViewHelpScreen.swift; sourceTree = "<group>"; };
+		D4D9A48F2D389E6600AEB65B /* UpdateSubTopicViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSubTopicViewHelpScreen.swift; sourceTree = "<group>"; };
+		D4D9A4912D39B6BD00AEB65B /* UpdateSubTopicLinkViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSubTopicLinkViewHelpScreen.swift; sourceTree = "<group>"; };
+		D4D9A4932D39BDA400AEB65B /* AddSubTopicLinkViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubTopicLinkViewHelpScreen.swift; sourceTree = "<group>"; };
+		D4D9A4952D39C27C00AEB65B /* SubTopicTimeStampsViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTopicTimeStampsViewHelpScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D40F70032D21961A0059B7A7 /* Exceptions for "MyRecallApp" folder in "MyRecallApp_v3" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D40F6FDF2D2196180059B7A7 /* MyRecallApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D40F70032D21961A0059B7A7 /* Exceptions for "MyRecallApp" folder in "MyRecallApp_v3" target */,
+			);
+			path = MyRecallApp;
+			sourceTree = "<group>";
+		};
+		D40F6FF42D21961A0059B7A7 /* MyRecallAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyRecallAppTests;
+			sourceTree = "<group>";
+		};
+		D40F6FFE2D21961A0059B7A7 /* MyRecallAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyRecallAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D40F6FDA2D2196180059B7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FEE2D21961A0059B7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FF82D21961A0059B7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D40F6FD42D2196180059B7A7 = {
+			isa = PBXGroup;
+			children = (
+				D40F70102D2197D10059B7A7 /* Views */,
+				D40F700F2D2197A70059B7A7 /* Models */,
+				D40F70122D21980F0059B7A7 /* Launch */,
+				D40F6FDF2D2196180059B7A7 /* MyRecallApp */,
+				D40F6FF42D21961A0059B7A7 /* MyRecallAppTests */,
+				D40F6FFE2D21961A0059B7A7 /* MyRecallAppUITests */,
+				D40F6FDE2D2196180059B7A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D40F6FDE2D2196180059B7A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40F6FDD2D2196180059B7A7 /* MyRecallApp_v3.app */,
+				D40F6FF12D21961A0059B7A7 /* MyRecallApp_v3Tests.xctest */,
+				D40F6FFB2D21961A0059B7A7 /* MyRecallApp_v3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D40F700F2D2197A70059B7A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70322D2330620059B7A7 /* Utilities */,
+				D40F70312D2330530059B7A7 /* Enums */,
+				D49003792D55396E00005A57 /* Topics.swift */,
+				D42BDA8A2D5BC056009711A4 /* TopicRecallTimeStamp.swift */,
+				D42BDA8C2D5BC06F009711A4 /* TopicOnlineLink.swift */,
+				D40F6FE42D2196180059B7A7 /* SubTopic.swift */,
+				D40F70292D232EF70059B7A7 /* SubTopicRecallTimeStamp.swift */,
+				D40F702B2D232F1B0059B7A7 /* SubTopicOnlineLink.swift */,
+				D40F701D2D21A9160059B7A7 /* Question.swift */,
+				D40F702D2D232F560059B7A7 /* QuestionRecallTimestamp.swift */,
+				D40F702F2D232F750059B7A7 /* QuestionOnlineLink.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D40F70102D2197D10059B7A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F6FE22D2196180059B7A7 /* ContentView.swift */,
+				D490037D2D55478700005A57 /* Topic views */,
+				D49003EA2D5A4E3E00005A57 /* Management of topics */,
+				D40F704F2D29EBF60059B7A7 /* SubTopic views */,
+				D40F70502D2A1C700059B7A7 /* Question views */,
+				D40F70512D2A1CAB0059B7A7 /* Recall views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D40F70122D21980F0059B7A7 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D40F70312D2330530059B7A7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70332D2330A40059B7A7 /* LinkType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D40F70322D2330620059B7A7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D42BDA902D5BF524009711A4 /* TopicLink.swift */,
+				D40F70352D2344AD0059B7A7 /* QuestionLink.swift */,
+				D40F70392D2346260059B7A7 /* CategoryLink.swift */,
+				D40F703B2D2483C30059B7A7 /* DateFormatter.swift */,
+				D40F70432D284EBD0059B7A7 /* LocalizedStringKey.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D40F704F2D29EBF60059B7A7 /* SubTopic views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F704D2D29C2D80059B7A7 /* SubTopicListView.swift */,
+				D4D9A4852D3715F900AEB65B /* SubTopicListViewHelpScreen.swift */,
+				D40F70212D223CF00059B7A7 /* AddSubTopicView.swift */,
+				D4D9A48D2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift */,
+				D40F70542D2AE68A0059B7A7 /* UpdateSubTopicView.swift */,
+				D4D9A48F2D389E6600AEB65B /* UpdateSubTopicViewHelpScreen.swift */,
+				D4D9A4892D38475500AEB65B /* Subtopic time stamp views */,
+				D4D9A4872D38470D00AEB65B /* Subtopic link views */,
+			);
+			path = "SubTopic views";
+			sourceTree = "<group>";
+		};
+		D40F70502D2A1C700059B7A7 /* Question views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70232D223D120059B7A7 /* QuestionsListView.swift */,
+				D432BE272D402D8400ED5776 /* QuestionListViewHelpScreen.swift */,
+				D432BE192D3DC54200ED5776 /* QuestionView.swift */,
+				D432BDF92D3C810400ED5776 /* QuestionViewHelpScreen.swift */,
+				D40F70252D2303FB0059B7A7 /* AddQuestionView.swift */,
+				D432BDF52D3C50E600ED5776 /* AddQuestionViewHelpScreen.swift */,
+				D40F70452D285D3F0059B7A7 /* UpdateQuestionView.swift */,
+				D432BDF72D3C578200ED5776 /* UpdateQuestionViewHelpScreen.swift */,
+				D4D9A48B2D3847B000AEB65B /* Question time stamp views */,
+				D4D9A48C2D3847E800AEB65B /* Question link views */,
+			);
+			path = "Question views";
+			sourceTree = "<group>";
+		};
+		D40F70512D2A1CAB0059B7A7 /* Recall views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70472D285F420059B7A7 /* QuestionAndUserAnswerView.swift */,
+			);
+			path = "Recall views";
+			sourceTree = "<group>";
+		};
+		D45D19662D484001009E62DD /* ImportJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D45D19632D47FE65009E62DD /* JSONImportAndExport.swift */,
+				D45D19692D48408B009E62DD /* ImportJSONView.swift */,
+				D471BFE82D4F101000C90983 /* ImportJSONViewHelpScreen.swift */,
+			);
+			path = ImportJSON;
+			sourceTree = "<group>";
+		};
+		D490037D2D55478700005A57 /* Topic views */ = {
+			isa = PBXGroup;
+			children = (
+				D490037B2D553D7900005A57 /* TopicListView.swift */,
+				D49003E62D56754700005A57 /* TopicListViewHelpScreen.swift */,
+				D490037E2D5547DF00005A57 /* AddTopicView.swift */,
+				D49003802D55489F00005A57 /* AddTopicViewHelpScreen.swift */,
+				D42BDA6D2D5AB6AE009711A4 /* UpdateTopicView.swift */,
+				D42BDA8E2D5BD74D009711A4 /* UpdateTopicViewHelpScreen.swift */,
+			);
+			path = "Topic views";
+			sourceTree = "<group>";
+		};
+		D49003EA2D5A4E3E00005A57 /* Management of topics */ = {
+			isa = PBXGroup;
+			children = (
+				D49003E82D5940CC00005A57 /* ManageTopicsView.swift */,
+				D42BDA922D5CEE44009711A4 /* ManageTopicsViewHelpScreen.swift */,
+				D42BDAB72D5EA4BD009711A4 /* SettingsView.swift */,
+				D489DE432D67AD570057F2E8 /* performJSONBackup.swift */,
+				D45D19662D484001009E62DD /* ImportJSON */,
+			);
+			path = "Management of topics";
+			sourceTree = "<group>";
+		};
+		D4D9A4872D38470D00AEB65B /* Subtopic link views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70562D2B0F1E0059B7A7 /* SubTopicLinksView.swift */,
+				D432BDF12D3B1AA300ED5776 /* SubTopicLinksViewHelpScreen.swift */,
+				D40F70582D2B371E0059B7A7 /* AddSubTopicLinkView.swift */,
+				D4D9A4932D39BDA400AEB65B /* AddSubTopicLinkViewHelpScreen.swift */,
+				D4D9A4832D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift */,
+				D4D9A4912D39B6BD00AEB65B /* UpdateSubTopicLinkViewHelpScreen.swift */,
+			);
+			path = "Subtopic link views";
+			sourceTree = "<group>";
+		};
+		D4D9A4892D38475500AEB65B /* Subtopic time stamp views */ = {
+			isa = PBXGroup;
+			children = (
+				D40F70522D2ADEDC0059B7A7 /* SubTopicTimeStampsView.swift */,
+				D4D9A4952D39C27C00AEB65B /* SubTopicTimeStampsViewHelpScreen.swift */,
+			);
+			path = "Subtopic time stamp views";
+			sourceTree = "<group>";
+		};
+		D4D9A48B2D3847B000AEB65B /* Question time stamp views */ = {
+			isa = PBXGroup;
+			children = (
+				D432BE152D3DC2A000ED5776 /* QuestionTimeStampsView.swift */,
+				D432BE172D3DC43F00ED5776 /* QuestionTimeStampsViewHelpScreen.swift */,
+			);
+			path = "Question time stamp views";
+			sourceTree = "<group>";
+		};
+		D4D9A48C2D3847E800AEB65B /* Question link views */ = {
+			isa = PBXGroup;
+			children = (
+				D432BE1B2D3DC86800ED5776 /* ShowQuestionLinksView.swift */,
+				D432BE212D3DCC2E00ED5776 /* ShowQuestionLinksViewHelpScreen.swift */,
+				D432BE1D2D3DC88600ED5776 /* AddQuestionLinkView.swift */,
+				D432BE252D3DCCD500ED5776 /* AddQuestionLinkViewHelpScreen.swift */,
+				D432BE1F2D3DC8A600ED5776 /* UpdateQuestionLinksView.swift */,
+				D432BE232D3DCC9700ED5776 /* UpdateQuestionLinkViewHelpScreen.swift */,
+			);
+			path = "Question link views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40F70042D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3" */;
+			buildPhases = (
+				D40F6FD92D2196180059B7A7 /* Sources */,
+				D40F6FDA2D2196180059B7A7 /* Frameworks */,
+				D40F6FDB2D2196180059B7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D40F6FDF2D2196180059B7A7 /* MyRecallApp */,
+			);
+			name = MyRecallApp_v3;
+			packageProductDependencies = (
+			);
+			productName = MyRecallApp;
+			productReference = D40F6FDD2D2196180059B7A7 /* MyRecallApp_v3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D40F6FF02D21961A0059B7A7 /* MyRecallApp_v3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40F70092D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3Tests" */;
+			buildPhases = (
+				D40F6FED2D21961A0059B7A7 /* Sources */,
+				D40F6FEE2D21961A0059B7A7 /* Frameworks */,
+				D40F6FEF2D21961A0059B7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40F6FF32D21961A0059B7A7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D40F6FF42D21961A0059B7A7 /* MyRecallAppTests */,
+			);
+			name = MyRecallApp_v3Tests;
+			packageProductDependencies = (
+			);
+			productName = MyRecallAppTests;
+			productReference = D40F6FF12D21961A0059B7A7 /* MyRecallApp_v3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D40F6FFA2D21961A0059B7A7 /* MyRecallApp_v3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40F700C2D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3UITests" */;
+			buildPhases = (
+				D40F6FF72D21961A0059B7A7 /* Sources */,
+				D40F6FF82D21961A0059B7A7 /* Frameworks */,
+				D40F6FF92D21961A0059B7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40F6FFD2D21961A0059B7A7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D40F6FFE2D21961A0059B7A7 /* MyRecallAppUITests */,
+			);
+			name = MyRecallApp_v3UITests;
+			packageProductDependencies = (
+			);
+			productName = MyRecallAppUITests;
+			productReference = D40F6FFB2D21961A0059B7A7 /* MyRecallApp_v3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D40F6FD52D2196180059B7A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D40F6FDC2D2196180059B7A7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D40F6FF02D21961A0059B7A7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D40F6FDC2D2196180059B7A7;
+					};
+					D40F6FFA2D21961A0059B7A7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D40F6FDC2D2196180059B7A7;
+					};
+				};
+			};
+			buildConfigurationList = D40F6FD82D2196180059B7A7 /* Build configuration list for PBXProject "MyRecallApp_v3" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D40F6FD42D2196180059B7A7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D40F6FDE2D2196180059B7A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */,
+				D40F6FF02D21961A0059B7A7 /* MyRecallApp_v3Tests */,
+				D40F6FFA2D21961A0059B7A7 /* MyRecallApp_v3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D40F6FDB2D2196180059B7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FEF2D21961A0059B7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FF92D21961A0059B7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D40F6FD92D2196180059B7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D432BDF82D3C578200ED5776 /* UpdateQuestionViewHelpScreen.swift in Sources */,
+				D40F70222D223CF00059B7A7 /* AddSubTopicView.swift in Sources */,
+				D42BDA932D5CEE44009711A4 /* ManageTopicsViewHelpScreen.swift in Sources */,
+				D4D9A4942D39BDA400AEB65B /* AddSubTopicLinkViewHelpScreen.swift in Sources */,
+				D49003E92D5940CC00005A57 /* ManageTopicsView.swift in Sources */,
+				D40F70592D2B371E0059B7A7 /* AddSubTopicLinkView.swift in Sources */,
+				D49003E72D56754700005A57 /* TopicListViewHelpScreen.swift in Sources */,
+				D40F70242D223D120059B7A7 /* QuestionsListView.swift in Sources */,
+				D40F70262D2303FB0059B7A7 /* AddQuestionView.swift in Sources */,
+				D40F70482D285F420059B7A7 /* QuestionAndUserAnswerView.swift in Sources */,
+				D40F70552D2AE68A0059B7A7 /* UpdateSubTopicView.swift in Sources */,
+				D45D196A2D48408B009E62DD /* ImportJSONView.swift in Sources */,
+				D432BE282D402D8400ED5776 /* QuestionListViewHelpScreen.swift in Sources */,
+				D432BE1A2D3DC54200ED5776 /* QuestionView.swift in Sources */,
+				D4D9A4842D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift in Sources */,
+				D42BDA8B2D5BC056009711A4 /* TopicRecallTimeStamp.swift in Sources */,
+				D40F70342D2330A40059B7A7 /* LinkType.swift in Sources */,
+				D42BDA6E2D5AB6AE009711A4 /* UpdateTopicView.swift in Sources */,
+				D490037C2D553D7900005A57 /* TopicListView.swift in Sources */,
+				D432BDFA2D3C810400ED5776 /* QuestionViewHelpScreen.swift in Sources */,
+				D45D19642D47FE7C009E62DD /* JSONImportAndExport.swift in Sources */,
+				D42BDA912D5BF524009711A4 /* TopicLink.swift in Sources */,
+				D40F70442D284EBD0059B7A7 /* LocalizedStringKey.swift in Sources */,
+				D432BE262D3DCCD500ED5776 /* AddQuestionLinkViewHelpScreen.swift in Sources */,
+				D432BE1E2D3DC88600ED5776 /* AddQuestionLinkView.swift in Sources */,
+				D432BE1C2D3DC86800ED5776 /* ShowQuestionLinksView.swift in Sources */,
+				D42BDAB82D5EA4BD009711A4 /* SettingsView.swift in Sources */,
+				D40F70532D2ADEDC0059B7A7 /* SubTopicTimeStampsView.swift in Sources */,
+				D4D9A48E2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift in Sources */,
+				D40F70362D2344AD0059B7A7 /* QuestionLink.swift in Sources */,
+				D432BE182D3DC43F00ED5776 /* QuestionTimeStampsViewHelpScreen.swift in Sources */,
+				D432BE162D3DC2A000ED5776 /* QuestionTimeStampsView.swift in Sources */,
+				D40F70572D2B0F1E0059B7A7 /* SubTopicLinksView.swift in Sources */,
+				D471BFE92D4F103200C90983 /* ImportJSONViewHelpScreen.swift in Sources */,
+				D4D9A4902D389E6600AEB65B /* UpdateSubTopicViewHelpScreen.swift in Sources */,
+				D4D9A4962D39C27C00AEB65B /* SubTopicTimeStampsViewHelpScreen.swift in Sources */,
+				D432BE242D3DCC9700ED5776 /* UpdateQuestionLinkViewHelpScreen.swift in Sources */,
+				D42BDA8F2D5BD74D009711A4 /* UpdateTopicViewHelpScreen.swift in Sources */,
+				D40F702E2D232F560059B7A7 /* QuestionRecallTimestamp.swift in Sources */,
+				D490037A2D55397F00005A57 /* Topics.swift in Sources */,
+				D432BDF22D3B1AA300ED5776 /* SubTopicLinksViewHelpScreen.swift in Sources */,
+				D40F6FE32D2196180059B7A7 /* ContentView.swift in Sources */,
+				D432BDF62D3C50E600ED5776 /* AddQuestionViewHelpScreen.swift in Sources */,
+				D489DE442D67AD570057F2E8 /* performJSONBackup.swift in Sources */,
+				D42BDA8D2D5BC06F009711A4 /* TopicOnlineLink.swift in Sources */,
+				D40F70462D285D3F0059B7A7 /* UpdateQuestionView.swift in Sources */,
+				D432BE222D3DCC2E00ED5776 /* ShowQuestionLinksViewHelpScreen.swift in Sources */,
+				D490037F2D5547DF00005A57 /* AddTopicView.swift in Sources */,
+				D432BE202D3DC8A600ED5776 /* UpdateQuestionLinksView.swift in Sources */,
+				D40F703C2D2483C30059B7A7 /* DateFormatter.swift in Sources */,
+				D40F6FE52D2196180059B7A7 /* SubTopic.swift in Sources */,
+				D40F704E2D29C2D80059B7A7 /* SubTopicListView.swift in Sources */,
+				D40F703A2D2346260059B7A7 /* CategoryLink.swift in Sources */,
+				D49003812D5548B300005A57 /* AddTopicViewHelpScreen.swift in Sources */,
+				D40F70302D232F750059B7A7 /* QuestionOnlineLink.swift in Sources */,
+				D4D9A4862D3715F900AEB65B /* SubTopicListViewHelpScreen.swift in Sources */,
+				D40F701E2D21A9160059B7A7 /* Question.swift in Sources */,
+				D4D9A4922D39B6BD00AEB65B /* UpdateSubTopicLinkViewHelpScreen.swift in Sources */,
+				D40F702C2D232F1B0059B7A7 /* SubTopicOnlineLink.swift in Sources */,
+				D40F702A2D232EF70059B7A7 /* SubTopicRecallTimeStamp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FED2D21961A0059B7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F6FF72D21961A0059B7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D40F6FF32D21961A0059B7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */;
+			targetProxy = D40F6FF22D21961A0059B7A7 /* PBXContainerItemProxy */;
+		};
+		D40F6FFD2D21961A0059B7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */;
+			targetProxy = D40F6FFC2D21961A0059B7A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D40F70052D21961A0059B7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyRecallApp/MyRecallApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyRecallApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyRecallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goedman.MyRecallApp-v3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D40F70062D21961A0059B7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyRecallApp/MyRecallApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyRecallApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyRecallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goedman.MyRecallApp-v3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D40F70072D21961A0059B7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D40F70082D21961A0059B7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D40F700A2D21961A0059B7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goedman.MyRecallAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRecallApp_v3.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyRecallApp_v3";
+			};
+			name = Debug;
+		};
+		D40F700B2D21961A0059B7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goedman.MyRecallAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRecallApp_v3.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyRecallApp_v3";
+			};
+			name = Release;
+		};
+		D40F700D2D21961A0059B7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goedman.MyRecallAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyRecallApp;
+			};
+			name = Debug;
+		};
+		D40F700E2D21961A0059B7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SPAAQ6SK2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goedman.MyRecallAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyRecallApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D40F6FD82D2196180059B7A7 /* Build configuration list for PBXProject "MyRecallApp_v3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40F70072D21961A0059B7A7 /* Debug */,
+				D40F70082D21961A0059B7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40F70042D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40F70052D21961A0059B7A7 /* Debug */,
+				D40F70062D21961A0059B7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40F70092D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40F700A2D21961A0059B7A7 /* Debug */,
+				D40F700B2D21961A0059B7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40F700C2D21961A0059B7A7 /* Build configuration list for PBXNativeTarget "MyRecallApp_v3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40F700D2D21961A0059B7A7 /* Debug */,
+				D40F700E2D21961A0059B7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D40F6FD52D2196180059B7A7 /* Project object */;
+}
