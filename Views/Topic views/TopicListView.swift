@@ -13,7 +13,7 @@ import OpenAPIURLSession
 struct TopicListView {
   // Used in remote communications
   @AppStorage("dirName") private var dirName = "MyRecallApp/Data"
-  @AppStorage("urlPath") private var urlPath = "http://Rob-Work-M3.local:8080/api"
+  @AppStorage("urlPath") private var urlPath = "http://Rob-Travel-M5.local:8083/api"
   @AppStorage("remote") private var remote = "false"
   
   // Used to export all topics when app is backgrounded
