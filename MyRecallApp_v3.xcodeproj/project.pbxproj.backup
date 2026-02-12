@@ -66,6 +66,8 @@
 		D49003E92D5940CC00005A57 /* ManageTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49003E82D5940CC00005A57 /* ManageTopicsView.swift */; };
 		D4A275782E05AC3400139931 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = D4A275772E05AC3400139931 /* OpenAPIRuntime */; };
 		D4A2757B2E05AC4500139931 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = D4A2757A2E05AC4500139931 /* OpenAPIURLSession */; };
+		D4C759E72E44097E007C74E1 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D4A275702E05A9E900139931 /* openapi.yaml */; };
+		D4C759E82E44097E007C74E1 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D4A275712E05A9E900139931 /* openapi-generator-config.yaml */; };
 		D4D9A4842D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4832D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift */; };
 		D4D9A4862D3715F900AEB65B /* SubTopicListViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A4852D3715F900AEB65B /* SubTopicListViewHelpScreen.swift */; };
 		D4D9A48E2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D9A48D2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift */; };
@@ -154,8 +156,8 @@
 		D49003802D55489F00005A57 /* AddTopicViewHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicViewHelpScreen.swift; sourceTree = "<group>"; };
 		D49003E62D56754700005A57 /* TopicListViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListViewHelpScreen.swift; sourceTree = "<group>"; };
 		D49003E82D5940CC00005A57 /* ManageTopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTopicsView.swift; sourceTree = "<group>"; };
-		D4A275702E05A9E900139931 /* MyRecallApp/openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = MyRecallApp/openapi.yaml; sourceTree = "<group>"; };
-		D4A275712E05A9E900139931 /* MyRecallApp/openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "MyRecallApp/openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		D4A275702E05A9E900139931 /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+		D4A275712E05A9E900139931 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		D4D9A4832D35CC2D00AEB65B /* UpdateSubTopicLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubTopicLinksView.swift; sourceTree = "<group>"; };
 		D4D9A4852D3715F900AEB65B /* SubTopicListViewHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopicListViewHelpScreen.swift; sourceTree = "<group>"; };
 		D4D9A48D2D3848EC00AEB65B /* AddSubTopicViewHelpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubTopicViewHelpScreen.swift; sourceTree = "<group>"; };
@@ -231,8 +233,8 @@
 		D40F6FD42D2196180059B7A7 = {
 			isa = PBXGroup;
 			children = (
-				D4A275702E05A9E900139931 /* MyRecallApp/openapi.yaml */,
-				D4A275712E05A9E900139931 /* MyRecallApp/openapi-generator-config.yaml */,
+				D4A275702E05A9E900139931 /* openapi.yaml */,
+				D4A275712E05A9E900139931 /* openapi-generator-config.yaml */,
 				D44D4BD82E6F28C10063AD11 /* README.md */,
 				D40F70102D2197D10059B7A7 /* Views */,
 				D40F700F2D2197A70059B7A7 /* Models */,
@@ -450,7 +452,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D4DF92CB2F3D726800214620 /* PBXTargetDependency */,
+				D4C759EA2E440AA3007C74E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D40F6FDF2D2196180059B7A7 /* MyRecallApp */,
@@ -519,7 +521,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					D40F6FDC2D2196180059B7A7 = {
 						CreatedOnToolsVersion = 16.2;
@@ -546,7 +548,7 @@
 			packageReferences = (
 				D4A275762E05AC3400139931 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
 				D4A275792E05AC4500139931 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
-				D4DF92C72F3D725C00214620 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				D4A2759C2E083E7C00139931 /* XCLocalSwiftPackageReference "../SwiftOpenAPIServer/swift-openapi-generator-main" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D40F6FDE2D2196180059B7A7 /* Products */;
@@ -566,6 +568,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44D4BDB2E6F28D30063AD11 /* README.md in Resources */,
+				D4C759E72E44097E007C74E1 /* openapi.yaml in Resources */,
+				D4C759E82E44097E007C74E1 /* openapi-generator-config.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,9 +687,9 @@
 			target = D40F6FDC2D2196180059B7A7 /* MyRecallApp_v3 */;
 			targetProxy = D40F6FFC2D21961A0059B7A7 /* PBXContainerItemProxy */;
 		};
-		D4DF92CB2F3D726800214620 /* PBXTargetDependency */ = {
+		D4C759EA2E440AA3007C74E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = D4DF92CA2F3D726800214620 /* OpenAPIGenerator */;
+			productRef = D4C759E92E440AA3007C74E1 /* OpenAPIGenerator */;
 		};
 /* End PBXTargetDependency section */
 
@@ -998,6 +1002,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		D4A2759C2E083E7C00139931 /* XCLocalSwiftPackageReference "../SwiftOpenAPIServer/swift-openapi-generator-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../SwiftOpenAPIServer/swift-openapi-generator-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		D4A275762E05AC3400139931 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1015,14 +1026,6 @@
 				minimumVersion = 1.1.0;
 			};
 		};
-		D4DF92C72F3D725C00214620 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-openapi-generator";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.10.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1036,9 +1039,9 @@
 			package = D4A275792E05AC4500139931 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
 			productName = OpenAPIURLSession;
 		};
-		D4DF92CA2F3D726800214620 /* OpenAPIGenerator */ = {
+		D4C759E92E440AA3007C74E1 /* OpenAPIGenerator */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D4DF92C72F3D725C00214620 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			package = D4A2759C2E083E7C00139931 /* XCLocalSwiftPackageReference "../SwiftOpenAPIServer/swift-openapi-generator-main" */;
 			productName = "plugin:OpenAPIGenerator";
 		};
 /* End XCSwiftPackageProductDependency section */
