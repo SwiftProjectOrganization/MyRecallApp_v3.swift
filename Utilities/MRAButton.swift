@@ -22,9 +22,8 @@ struct MRAButton: View {
         .font(.headline) // Set the font style
         .cornerRadius(10) // Round the corners
         .buttonBorderShape(.roundedRectangle)
-        .buttonStyle(.borderedProminent)
+        .buttonStyle(.glass)
         .multilineTextAlignment(TextAlignment.center)
-        //.liquidGlass(material: .regular)
     }
   }
 }

@@ -99,6 +99,8 @@ extension TopicListView: View {
         ForEach(sortedTopics) { topic in
           NavigationLink(topic.title!,
                          value: topic)
+          .padding(10)
+          .glassEffect(.clear.tint(.blue).interactive(), in: .buttonBorder)
         }
         .onDelete { indexSet in
           if let index = indexSet.first {
@@ -106,29 +108,36 @@ extension TopicListView: View {
           }
         }
       } // End of List
+
       Spacer()
       VStack {
-        HStack {
-          Spacer()
-          MRAButton(label: "Start\nrecall",
-                    isDisabled: filteredQuestions.count == 0) {
-            setupRecall()
-          }
-          Spacer()
-          MRAButton(label: "Manage\ntopics") {
-            isManageTopicsScreenShown = true
-          }
-          Spacer()
-          MRAButton(label: importButtonText,
-                    isDisabled: importFilesAvailable(path: dirName,
-                                                     remote: remote)) {
-            if remote == "false" || remote == "False" {
-              isLocalImportJSON = true
-            } else {
-              isRemoteImportJSON = true
+        GlassEffectContainer {
+          HStack(spacing: 10) {
+            Spacer()
+            Button("Start\nrecall") {
+              setupRecall()
             }
+            .disabled(filteredQuestions.count == 0)
+            .padding(10)
+            .glassEffect(.clear.interactive(), in: .buttonBorder)
+            Spacer()
+            Button("Manage\ntopics") { isManageTopicsScreenShown = true }
+            .padding(10)
+            .glassEffect(.clear.interactive(), in: .buttonBorder)
+            Spacer()
+            Button(importButtonText) {
+              if remote == "false" || remote == "False" {
+                isLocalImportJSON = true
+              } else {
+                isRemoteImportJSON = true
+              }
+            }
+            .disabled(importFilesAvailable(path: dirName,
+                                      remote: remote))
+            .padding(10)
+            .glassEffect(.clear.interactive(), in: .buttonBorder)
+            Spacer()
           }
-          Spacer()
         }
       }
       .navigationDestination(for: Topic.self) { topic in
